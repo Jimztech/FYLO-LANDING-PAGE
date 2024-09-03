@@ -1,0 +1,52 @@
+:root {
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+
+    --BrightBlue: hsl(224, 93%, 58%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+
+    --LightGrayishBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.first-background {
+    background-image: url("/images/illustration-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 2px solid red;
+}
+
+.nav {
+    border: 2px solid red;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+
+
+.nav__link {
+    color: var(--VeryDarkBlue);
+    text-decoration: none;
+}
