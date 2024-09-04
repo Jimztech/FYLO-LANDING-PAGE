@@ -11,6 +11,7 @@
 
 .main {
     margin: 0 auto;
+    padding: 10px;
 }
 
 .first-background {
@@ -18,6 +19,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+    padding: 150px;
 }
 
 header {
@@ -26,27 +28,23 @@ header {
     justify-content: space-between;
 }
 
-.logo {
-    border: 2px solid red;
-}
-
-.nav {
-    border: 2px solid red;
-}
-
 .nav__list {
     margin: 0;
-    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    align-items: flex-end;
+
 }
-
-
 
 .nav__link {
     color: var(--VeryDarkBlue);
     text-decoration: none;
+    
 }
+
+.nav__item {
+    padding-top: 0.625rem;
+}
+
+
