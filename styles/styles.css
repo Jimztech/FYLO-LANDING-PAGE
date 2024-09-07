@@ -37,7 +37,7 @@ main {
 }
 
 .curved-background {
-    background: url(/images/bg-curve-mobile.svg) no-repeat center fixed;
+    background: url(/images/bg-curve-mobile.svg) no-repeat center;
     background-size: cover;
 }
 
@@ -68,6 +68,10 @@ header {
 
 .nav__item {
     margin-top: 0.625rem;
+}
+
+.logo {
+    padding-top: 7px;
 }
 
 .off-screen-menu {
