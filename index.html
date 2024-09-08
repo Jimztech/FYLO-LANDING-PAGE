@@ -13,34 +13,24 @@
 </head>
 <body>
   <main class="main">
-    <div class="few">
-      <header>
-        <a href="#">
-          <img 
-          src="./images/logo.svg" 
-          class="logo"
-          alt="logo"
-          width="100"
-          height="30"
-          >
-        </a>
-        <div class="off-screen-menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
-          </ul>
+    <header class="navigation-header">
+      <nav>
+        <div class="logo-container">
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo" class="logo">
+          </a>
         </div>
-
-        <nav>
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </header>
-    </div>
+        <div class="navigation-items" id="navigation-items">
+          <a href="#features">Features</a>
+          <a href="#team">Team</a>
+          <a href="#sign in">Sign In</a>
+        </div>
+        <div class="hamburger">
+          <span id="openHam">&#9776;</span>
+          <span id="closeHam">&#x2716;</span>
+        </div>
+      </nav>
+    </header>
     
     <div class="few">
       <img 
