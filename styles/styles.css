@@ -107,14 +107,68 @@ nav {
         gap: 10vh;
         display: none;
     }
+
+    .productive-header {
+        text-align: center;
+    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 50rem) {
+    .ham-menu {
+        display: none;
+    }
+
+    .off-screen-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+    }
     .logo {
         height: 40px;
     }
     .navigation-header {
         margin-top: 20px;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+    }
+    .hero {
+        margin-top: 40px;
+    }
+    .hero-heading, .hero-paragraph, .email-box {
+        text-align: left;
+    }
+    .email-input-container {
+        width: 60%;
+    }
+    .some-buttons {
+        width: 45%;
+    }
+    .email-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .productive, .second-background-container {
+        margin-top: 70px;
+    }
+
+    .second-background {
+        width: 100%;
+    }
+    .second-background-container {
+        width: 50%;
+    }
+
+    .highlighted {
+        
     }
 }
 
@@ -257,14 +311,3 @@ footer {
     padding: 30px 0;
 }
 
-@media (min-width: 50rem) {
-    .ham-menu {
-        display: none;
-    }
-
-    .off-screen-menu {
-        position: static;
-        display: flex;
-        flex-direction: row;
-    }
-}
