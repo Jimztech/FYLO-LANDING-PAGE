@@ -42,33 +42,33 @@ main {
 .second-background {
     max-inline-size: 100%;
     block-size: auto;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .navigation-header {
     background-color: var(--White); /*change to white bg later*/
-    padding: 0 15px;
-    height: 60px;  /*previously 60px*/
+    padding: 0 0.94rem;
+    height: 3.75rem;  /*previously 60px*/
     display: flex;
     justify-content: center;
     align-items: center
 }
 nav {
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .navigation-items {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .navigation-items > a {
     color: var(--VeryDarkBlue); /*text color should be darkblue*/
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     transition: .4s ease-in-out;
 }
 .navigation-items > a:hover {
@@ -76,7 +76,7 @@ nav {
 }
 
 .hamburger {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--VeryDarkBlue);/*darkblue*/
     display: none;
@@ -85,7 +85,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     .logo{
-        width: 80px;
+        width: 5rem;
     }
     .hamburger {
         display: flex;
@@ -99,7 +99,7 @@ nav {
         align-items: center;
         position: absolute;
         right: 0;
-        top: 58px;
+        top: 3.6rem;
         background-color: var(--White); /*with opaque white*/
         opacity: 0.7;
         width: 100%;
@@ -118,7 +118,12 @@ nav {
     }
     .hr-element {
         width: 100%;
-        margin-left: 80px;
+        margin-left: 5rem;
+    }
+
+    .detail-heading, .detail-paragraph, .starter-box {
+        text-align: center;
+        color: var(--LightGray); 
     }
 }
 
@@ -133,19 +138,22 @@ nav {
         flex-direction: row;
     }
     .logo {
-        height: 40px;
+        height: 2.5rem;
     }
     .navigation-header {
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
 
     .one {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 30px;
+        margin-top: 1.87rem;
     }
     .hero {
-        margin-top: 100px;
+        margin-top: 6.25rem;
+    }
+    .hero-paragraph {
+        font-size: 22px;
     }
     .hero-heading, .hero-paragraph, .email-box {
         text-align: left;
@@ -175,12 +183,30 @@ nav {
     .second-background-container {
         width: 50%;
     }
+    .container {
+        max-width: 18.75rem;
+    }
+    .productive-text {
+        font-size: 20px;
+    }
+
+    .three {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        padding: 2.5rem;
+        padding-left: 1.25rem;
+    }
+    .detailed-box {
+       width: 100%;
+       max-width: 600px;
+    }
 }
 
 .hero {
     text-align: center;
 }
-input[type=text], select {
+.email-input-container input[type=text], .email-input-container select {
     width: 75%;
     padding: 10px 20px;
     margin: 8px 0;
@@ -188,7 +214,7 @@ input[type=text], select {
     border: 1px solid var(--DesaturatedBlue);
     border-radius: 4px;
 }
-input[type=text]:focus {
+.email-input-container input[type=text]:focus {
     border: 1px solid var(--DesaturatedBlue);
     outline: none;
 }
@@ -260,8 +286,14 @@ hr {
     padding: 10px;
     margin-top: 30px;
 }
+
+/*There is work to do here.*/
+
+.details {
+    background-color: var(--DesaturatedBlue);
+    margin-top: 0;
+}
 .detail-heading, .detail-paragraph, .starter-box {
-    text-align: center;
     color: var(--LightGray);
 }
 
@@ -270,15 +302,19 @@ hr {
 }
 
 .starter-button {
-    padding: 12px 70px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
     border: none;
     background-color: var(--BrightBlue);
     color: var(--White);
 }
-
-.details {
-    background-color: var(--DesaturatedBlue);
-    margin-top: 0;
+.starter-input-container input[type=text], .starter-input-container select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 footer {
@@ -293,7 +329,7 @@ footer {
     gap: 0.5rem;
 }
 .phone {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .mail-container {
@@ -302,7 +338,7 @@ footer {
     gap: 0.5rem;
 }
 .mail {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .about {
